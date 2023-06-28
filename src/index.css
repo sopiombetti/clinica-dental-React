@@ -29,21 +29,35 @@ nav{
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: rgb(223, 223, 223);
-
+  background-color: rgb(207, 204, 204);
+  height: 50px;
+  position: fixed;
+  z-index: 100;
 }
 
+.body{
+  padding: 80px;
+  
+}
 
 .dark{
-  background-color: #121212c8;
+  background-color: #1f1f1f;
   color: white;
 }
 .dark .link {
   color: white;
 }
 
-.dark #card{
-  background-color: #2e2e2e;
+.cardDark{
+  background-color: #000000b3;
+  color: white;
+}
+.cardDark .link{
+  color: white;
+}
+
+.favButton:hover{
+  background-color: rgb(203, 203, 92);
 }
 
 nav img{
@@ -79,13 +93,15 @@ footer {
   display: flex;
   justify-content: center;
   text-align: center;
-  padding: 2rem;
+  padding: 1rem;
   position: relative;
   bottom: 0;
   width: 97vw;
   height: 40px;
   margin-top: 2rem;
-  background-color: rgb(237, 237, 237);
+  background-color: rgb(200, 198, 198);
+  position: fixed;
+  z-index: 100;
 }
 
 footer > img{
