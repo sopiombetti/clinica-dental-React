@@ -27,7 +27,7 @@ const reducerF = (state, action) => {
     case "LIKE":
       return [...state, action.payload]
     case "DISLIKE":
-      return [action.payload]
+      return action.payload
   }
 }
 

@@ -55,6 +55,10 @@ nav{
 .cardDark .link{
   color: white;
 }
+.cardDark .link:hover{
+  color: rgb(190, 188, 188);
+}
+
 
 .favButton:hover{
   background-color: rgb(203, 203, 92);

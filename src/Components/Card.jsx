@@ -11,17 +11,21 @@ const Card = ({dentist, origin}) => {
 
   const addFav = ()=>{
     // Aqui iria la logica para agregar la Card en el localStorage
-
+    
     if(origin){
-      dispatchF({type: "DISLIKE", payload: stateF.filter((den) => den.id !== dentist.id)})
+      localStorage.clear()
+      dispatchF({type: "DISLIKE", payload: stateF.filter((den) => den.id != dentist.id)})
       
     }
     else if(stateF.find((denFav) => denFav.id == dentist.id)){
       document.querySelector('.favButton').disabled = true;
+      alert("Este dentista ya fue agregado previamente a favoritos")
     }
     else{
       dispatchF({type: "LIKE", payload: dentist})
     }
+    
+    
   }
 
 
