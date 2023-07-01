@@ -57,7 +57,7 @@ const ContextProvider = ({ children }) => {
 
   useEffect(() => {
     localStorage.setItem("favs", JSON.stringify(stateF))
-    console.log(stateF)
+    //console.log(stateF)
   }, [stateF])
 
   return (

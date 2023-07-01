@@ -13,7 +13,7 @@ const Card = ({dentist, origin}) => {
     // Aqui iria la logica para agregar la Card en el localStorage
     
     if(origin){
-      localStorage.clear()
+      //localStorage.clear()
       dispatchF({type: "DISLIKE", payload: stateF.filter((den) => den.id != dentist.id)})
       
     }
@@ -24,7 +24,6 @@ const Card = ({dentist, origin}) => {
     else{
       dispatchF({type: "LIKE", payload: dentist})
     }
-    
     
   }
 
