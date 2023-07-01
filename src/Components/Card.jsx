@@ -31,7 +31,7 @@ const Card = ({dentist, origin}) => {
   return (
     <div id="card" className={stateT ? "cardDark" : undefined}>
         {/* En cada card deberan mostrar en name - username y el id */}
-        <img src="../../public/images/doctor.jpg" width="90px" height="100px"/>
+        <img src="/images/doctor.jpg" width="90px" height="100px"/>
         <Link to={"/detalle/" + dentist.id} className="link"><h3>{dentist.name}</h3></Link>
         <h4>{dentist.username}</h4>
         <p>{dentist.id}</p>

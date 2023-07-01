@@ -24,7 +24,7 @@ const Navbar = () => {
   return (
     <nav className={stateT}>
       {/* Aqui deberan agregar los liks correspondientes a las rutas definidas */}
-      <img src="../../public/DH.ico"/>
+      <img src="/DH.ico"/>
       <div className="links">
         <Link to={routes.home}><h3 className="link">Home</h3></Link>
         <Link to={routes.contact}><h3 className="link">Contact</h3></Link>
